@@ -1,0 +1,31 @@
+# RANDOM MODULE 
+import random
+# print(random.randint(1,10))
+
+# coin=("HEADS","TAIL")p
+# coin2= ("head","tail")
+# print(random.(coin))
+
+# ROCK PAPER SCISSOR
+ch =("rock=","paper","scissor")
+ai = random.choice(ch)
+player=""
+while player not in ch:
+    player=input("enter yr choice rock/paper/scissors ;-").lower()
+
+if player == "rock" and ai == "scissor":
+    print("player wins")
+elif player == "rock" and ai == "paper":
+    print("ai wins")
+elif player == ai :
+    print("tie")
+elif player == "paper" and ai == ("scissor"):
+    print("ai wins")
+elif player == ("paper") and ai == ("rock"):
+    print("player wins ")
+elif player == ("scissor") and ai == ("rock"):
+    print("ai wins")
+elif player == ("scissor") and ai == ("paper"):
+    print("player wins")
+else:
+    print("error")
